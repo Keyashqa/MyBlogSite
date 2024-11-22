@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="hho.css">
+</head>
+<body>
+    <header>
+        <h1>Keyas Blogzz</h1>
+        <p>Sharing my thoughts, updates, and photos</p>
+    </header>
+    <main>
+        <!-- Photo Gallery Section -->
+        <section id="photo-gallery">
+            <h2>Gallery</h2>
+            <div class="carousel">
+                <button class="prev" onclick="scrollCarousel(-1)">&#8249;</button>
+                <div class="carousel-track">
+                    <img src="gallery/20230915_194802.jpg" alt="Photo 1">
+                    <img src="gallery/20231106_150742.jpg" alt="Photo 2">
+                    <img src="gallery/20231127_111254.jpg" alt="Photo 3">
+                    <img src="gallery/20231228_144600.jpg" alt="Photo 4">
+                    <img src="gallery/20230915_194802.jpg" alt="Photo 1">
+                    <img src="gallery/20231106_150742.jpg" alt="Photo 2">
+                    <img src="gallery/20230915_194802.jpg" alt="Photo 1">
+                    <img src="gallery/20231106_150742.jpg" alt="Photo 2">
+                    <img src="gallery/20231127_111254.jpg" alt="Photo 3">
+                    <img src="gallery/20231228_144600.jpg" alt="Photo 4">
+                    <img src="gallery/20230915_194802.jpg" alt="Photo 1">
+                    <img src="gallery/20231106_150742.jpg" alt="Photo 2">
+                    <img src="gallery/20231127_111254.jpg" alt="Photo 3">
+                    <img src="gallery/20231228_144600.jpg" alt="Photo 4">
+                    <img src="https://via.placeholder.com/200" alt="Photo 3">
+                    <img src="https://via.placeholder.com/200" alt="Photo 4">
+                    <img src="https://via.placeholder.com/200" alt="Photo 5">
+                </div>
+                <button class="next" onclick="scrollCarousel(1)">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Two-Column Layout -->
+        <div class="content-columns">
+            <section id="daily-updates">
+                <h2>Daily Updates</h2>
+                <article class="latest-post">
+                    <h3>Head hits with realization!!</h3>
+                    <p>
+                        Today, I had some quite impressive realizations. My close friend reminded me who I am. In layman terms, I love to take risks, was keeping no back-up plans, becuase I believe, keeping a back-up makes you less efficient to work towards your goals.
+                        But, after my JEE, I have completely changed my fundamental identities, taking every step with a back-up. That's why, I was soo concerned to have a back-up career along with my Aim. Thinking that, I could focus on everything I want, which made my efficiency to almost zero at anything.
+                         Even tough, I know That One cannot have everything he wants,BUT, still I was trying to do that.What a foolish & coward mind right?!. Anyways, thanks again for reminding, 'You cannot measure the depth, without wetting yourself.Take risk, It is not as hard as it seems to be.'
+                    </p>
+                    <time datetime="2024-11-17">November 17, 2024</time>
+                </article>
+                <article class="latest-post">
+                    <h3>Head hits with realization!!</h3>
+                    <p>
+                        Today, I had some quite impressive realizations. My close friend reminded me who I am. In layman terms, I love to take risks, was keeping no back-up plans, becuase I believe, keeping a back-up makes you less efficient to work towards your goals.
+                        But, after my JEE, I have completely changed my fundamental identities, taking every step with a back-up. That's why, I was soo concerned to have a back-up career along with my Aim. Thinking that, I could focus on everything I want, which made my efficiency to almost zero at anything.
+                         Even tough, I know That One cannot have everything he wants,BUT, still I was trying to do that.What a foolish & coward mind right?!. Anyways, thanks again for reminding, 'You cannot measure the depth, without wetting yourself.Take risk, It is not as hard as it seems to be.'
+                    </p>
+                    <time datetime="2024-11-17">November 17, 2024</time>
+                </article>
+                <article class="latest-post">
+                    <h3>Head hits with realization!!</h3>
+                    <p>
+                        Today, I had some quite impressive realizations. My close friend reminded me who I am. In layman terms, I love to take risks, was keeping no back-up plans, becuase I believe, keeping a back-up makes you less efficient to work towards your goals.
+                        But, after my JEE, I have completely changed my fundamental identities, taking every step with a back-up. That's why, I was soo concerned to have a back-up career along with my Aim. Thinking that, I could focus on everything I want, which made my efficiency to almost zero at anything.
+                         Even tough, I know That One cannot have everything he wants,BUT, still I was trying to do that.What a foolish & coward mind right?!. Anyways, thanks again for reminding, 'You cannot measure the depth, without wetting yourself.Take risk, It is not as hard as it seems to be.'
+                    </p>
+                    <time datetime="2024-11-17">November 17, 2024</time>
+                </article>
+            </section>
+            <section id="pinned-posts">
+                <h2>Pinned Posts</h2>
+                <div class="grid">
+                    <article class="pinned-post">
+                        <img src="https://via.placeholder.com/150" alt="Post Thumbnail">
+                        <h3>Pinned Post 1</h3>
+                    </article>
+                    <article class="pinned-post">
+                        <img src="https://via.placeholder.com/150" alt="Post Thumbnail">
+                        <h3>Pinned Post 2</h3>
+                    </article>
+                    <article class="pinned-post">
+                        <img src="https://via.placeholder.com/150" alt="Post Thumbnail">
+                        <h3>Pinned Post 3</h3>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollCarousel(direction) {
+    const track = document.querySelector('.carousel-track');
+    const scrollAmount = 220; // Adjust to match image width + gap
+    track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+    </script>
+</body>
+</html>
